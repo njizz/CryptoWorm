@@ -14,7 +14,9 @@ const REDIS_URL = isDevelopment ?
     'redis://127.0.0.1:6379' :
     'redis://redis-13634.c226.eu-west-1-3.ec2.cloud.redislabs.com:13634';
 const DEFAULT_PORT = 3000;
-const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`;
+const ROOT_NODE_ADDRESS = isDevelopment ? 
+    `http://localhost:${DEFAULT_PORT}` :
+    'https://lemon-fish-wig.cyclic.app';
 
 const app = express();
 const blockchain = new Blockchain();

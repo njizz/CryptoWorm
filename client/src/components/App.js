@@ -16,9 +16,14 @@ class App extends Component {
 
         return (
             <div className='App'>
-                <img className='logo' src={logo}></img>
+                <div>
+                    <span class="e">e</span>
+                    <span class="n">n</span>
+                    <span class="j">j</span>
+                    <span class="i">i</span>
+                </div>
                 <br />
-                <div>CRYPTO WORM BLOCKCHAIN</div>
+                <div>Welcome to the enji token blockchain.</div>
                 <br />
                 <div><Link to='/blocks'>Blocks</Link></div>
                 <div><Link to='/conduct-transaction'>Conduct a Transaction</Link></div>

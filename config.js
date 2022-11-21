@@ -16,10 +16,17 @@ const REWARD_INPUT = { address: '*authorised-reward*' };
 
 const MINING_REWARD = 50;
 
+const PUBNUB_CREDENTIALS = {
+    publishKey: 'pub-c-b4e2bdd5-8f07-4d0b-89fe-c338f84f2ce6',
+    subscribeKey: 'sub-c-fd1a56e6-7f91-4993-8744-689cec78083b',
+    secretKey: 'sec-c-YjhlODIzYWUtZmY3Mi00MWIyLWI0YjYtZmE1ZjBjODYxYTZh'
+  };
+
 module.exports = { 
     GENESIS_DATA, 
     MINE_RATE, 
     STARTING_BALANCE, 
     REWARD_INPUT, 
-    MINING_REWARD 
+    MINING_REWARD,
+    PUBNUB_CREDENTIALS
 };

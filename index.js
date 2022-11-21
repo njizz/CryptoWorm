@@ -10,19 +10,14 @@ const TransactionMiner = require('./app/transaction-miner');
 
 const isDevelopment = process.env.ENV === 'development';
 
-const REDIS_URL = isDevelopment ?
-    'redis://127.0.0.1:6379' :
-    'redis://redis-13634.c226.eu-west-1-3.ec2.cloud.redislabs.com:13634';
 const DEFAULT_PORT = 3000;
-const ROOT_NODE_ADDRESS = isDevelopment ? 
-    `http://localhost:${DEFAULT_PORT}` :
-    'https://lemon-fish-wig.cyclic.app';
+const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`;
 
 const app = express();
 const blockchain = new Blockchain();
 const transactionPool = new TransactionPool();
 const wallet = new Wallet();
-const pubsub = new PubSub({ blockchain, transactionPool, redisUrl: REDIS_URL });
+const pubsub = new PubSub({ blockchain, transactionPool });
 const transactionMiner = new TransactionMiner({ blockchain, transactionPool, wallet, pubsub });
 
 app.use(bodyParser.json());

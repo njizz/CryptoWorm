@@ -28652,10 +28652,15 @@ var App = /*#__PURE__*/function (_Component) {
           balance = _this$state$walletInf.balance;
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "App"
-      }, /*#__PURE__*/_react.default.createElement("img", {
-        className: "logo",
-        src: _logo.default
-      }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "CRYPTO WORM BLOCKCHAIN"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", {
+        class: "e"
+      }, "e"), /*#__PURE__*/_react.default.createElement("span", {
+        class: "n"
+      }, "n"), /*#__PURE__*/_react.default.createElement("span", {
+        class: "j"
+      }, "j"), /*#__PURE__*/_react.default.createElement("span", {
+        class: "i"
+      }, "i")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "Welcome to the enji token blockchain."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/blocks"
       }, "Blocks")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/conduct-transaction"
@@ -47227,7 +47232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51483" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51821" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
